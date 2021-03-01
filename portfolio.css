@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Quicksand:wght@300&display=swap');
+
+
+body{
+	background-color: #28323b;
+	margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.name{
+  position: fixed;
+  z-index: 1000;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
+  margin: 7px 0px 7px 20px;
+  display: inline-block;
+  color: #fe9770;
+}
+
+.navig{
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+}
+
+.navig ul{
+  float: right;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+}
+
+.navig ul li{
+  list-style: none;
+}
+
+.navig ul li:before{
+  z-index: 10;
+  content: attr(data-text);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 6em;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+  letter-spacing: 20px;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+.navig ul li:hover:before{
+  opacity: 0.5;
+  letter-spacing: 20px;
+}
+
+.navig ul li a{
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px;
+  margin: 0 20px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.navig ul:hover li a{
+  opacity: 0;
+}
+
+.navig ul li a:hover{
+  transform: scale(1.4);
+  z-index: 100;
+  background: #ff3f81;
+  opacity: 1;
+}
+
+.navig ul li a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #ffffff90, transparent);
+  transform: skewX(35deg);
+  transition: 0s;
+}
+
+.navig ul li a:hover:before{
+  left: calc(100% + 100px);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+#hhome{
+  position: fixed;
+  top: 12px;
+  left: 55%;
+  margin: 2px;
+}
+
+#hskills{
+  position: fixed;
+  top: 12px;
+  left: 65%;
+  margin: 2px;
+}
+
+#hinterests{
+  position: fixed;
+  top: 12px;
+  left: 75%;
+  margin: 2px;
+}
+
+#hcontact{
+  position: fixed;
+  top: 12px;
+  left: 88%;
+  margin: 2px;
+}
+
+.sticky{
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  background-color: #19191990;
+  height: 60px;
+}
+
+.parallax{
+  background-image: url('lamp.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+section {
+  height: 100%;
+  color: #ffffff;
+}
+
+h1{
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 70px;
+  margin-top: .5%;
+}
+
+h2{
+  font-weight: 400;
+  padding-top: 25%;
+  margin: 0;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 35px;
+}
+
+.aboutfull2{
+	margin: 0px;
+	height: 900px;
+	background-color: #28323b;
+}
+
+.aboutme2{
+	width: 42%;
+	height: 570px;
+	position: absolute;
+	z-index: 1;
+	left: 8%;
+	font-family: 'Inconsolata', monospace;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #28323b;
+  float: right;
+  padding: 5% 5% 3% 7%; 
+  margin-top: 5%; 
+}
+
+#about2{
+	font-size: 35px;
+}
+
+.photo2{
+	width: 37.5%;
+	position: absolute;
+	z-index: 2;
+	right: 11%;
+}
+
+footer{
+	background-color: #191919;
+	color:#ffffff;
+	font-family: "Roboto Thin";
+	padding: 1%;
+	display: block;
+	margin-top: 6.3%;
+	width: 100%;
+	height: 180px;
+}
+
+
+.contactfull{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	color: #fe9770;
+	text-align: center;
+}
+
+.contact{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	padding: 100px;
+	color: #ffffff;
+}
+
+.logo2{
+	display: inline;
+	float: left;
+	position: absolute;
+	width: 7%;
+}
+
+.smedia{
+	float: right;
+}
+
+.smedia a{
+	display: inline;
+	text-decoration: none;
+	color: #f7f7f7;
+	border: 1px solid #fd2c1d;
+	padding: 10.6px 15px;
+	margin: 0 15px;
+	font-size: 30pt;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	align-items: center;
+	border-radius: 15px;
+	transition: 0.2s;
+}
+
+.smedia a i{
+	transition: 0.5s;
+}
+
+.smedia a:hover{
+	transform: scale(1.1);
+	background-color: #f7f7f7;
+	border: 1px solid #b3365b;
+	color: #031c32;
+}
+
+.smedia a:hover i{
+	transform: rotate(15deg); scale(1.2);
+}
+
+@media screen and (max-width: 415px){
+  body{
+    background-color: #28323b;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  .parallax{
+    background-image: url('lamp.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  h1{
+    font-size: 50px;
+    padding-bottom: 11%;
+  }
+  h3{
+    font-size: 25px;
+    padding-top: 25%;
+    font-weight: 500;
+  }
+  .photo2{
+  	display: block;
+  	position: relative;
+  	width: 80%;
+  	left: 10%;
+  }
+  .name{
+  	display: none;
+  }
+  .aboutme2{
+  	margin: 50px 0;
+  	display: block;
+  	position: relative;
+  	width: 100%;
+  	height: 0px;
+  	left: 0px;
+  	font-size: 15px;
+  	float: none;
+  }
+  .metercard{
+  	height: 150px;
+    width: 150px;
+    margin: 28px;
+  }
+  .levelcontainer{
+  	height: 780px;
+  	padding: 0;
+  	margin: 50px 0;
+  }
+  footer{
+  	height: 250px;
+  }
+  .logo2{
+  	position: relative;
+  	width: 40%;
+    left: 30%;
+  }
+  .smedia{
+  	margin: 0 25px;
+  	float: left;
+  }
+  .smedia a{
+    padding: 5px 10px;
+    font-size: 25pt;
+  }
+}
