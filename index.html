@@ -41,10 +41,10 @@
 		</div>
 	</header>
 
-	<div class="parallax scroll" data-rateX="0" data-rateY="-0.2">
+	<div class="parallax scroll">
 		<section>
-			<h2 class="scroll" id="parallaxid" data-rateX="-4" data-rateY="1">Hey There,</h2>
-			<h1 class="scroll" data-rateX="4" data-rateY="1">I am Aakash</h1>
+			<h2 class="scroll" id="parallaxid" data-aos="fade-up" data-aos-duration="1150">Hey There,</h2>
+			<h1 class="scroll" data-aos="fade-up" data-aos-duration="2150">I am Aakash</h1>
 	  	</section>
 	</div>
 
@@ -115,7 +115,7 @@
 
 	</div>
 
-	<div class="main-block">
+	<div class="main-block" data-aos="fade-up" data-aos-duration="1150">
     	<script type="text/javascript">var submitted=false;</script>
     	<iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
     	onload="if(submitted) {window.location='thankyou.html';}"></iframe>
@@ -158,24 +158,6 @@
 
 	<script>
 	      AOS.init();
-	</script>
-
-	<script>
-	    window.addEventListener('scroll', function(e) {
-
-	      let target = document.querySelectorAll('.scroll');
-	      let index = 0;
-	      const length = target.length;
-	      
-	      for( index; index < length; index++ ) {
-	        let positionY = window.pageYOffset * parseFloat( target[index].dataset.ratey );
-	        let positionX = window.pageYOffset * parseFloat( target[index].dataset.ratex );
-	        console.log(positionX);
-	        
-	        target[index].style.transform = 'translate3d(' + positionX +'px,' + positionY + 'px, 0px)';
-	      }
-	    })
-
 	</script>
 
 </body>
