@@ -284,9 +284,12 @@ footer{
     overflow-x: hidden;
   }
   .parallax{
-    background-image: url('lamp.jpg');
+    background-image: url('rocket.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+  h2{
+    padding-top: 50%;
   }
   h1{
     font-size: 50px;
@@ -327,5 +330,17 @@ footer{
   .smedia a{
     padding: 5px 10px;
     font-size: 25pt;
+  }
+  #hhome{
+    left: 0%;
+  }
+  #hskills{
+    left: 19%;
+  }
+  #hinterests{
+    left: 39%;
+  }
+  #hcontact{
+    left: 68%;
   }
 }
