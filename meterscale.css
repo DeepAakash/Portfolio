@@ -8,13 +8,22 @@ body{
 
 .levelcontainer{
 	width: 100%;
-	padding: 150px 0;
+	padding: 55px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #dde1e7;
 	flex-wrap: wrap;
 }
+
+.noob{
+	display: block;
+	font-size: 23px;
+	width: 100%;
+	text-align: center;
+	background-color: #dde1e7;
+	padding-top: 50px
+	}
 
 .metercard{
 	display: inline-block;
@@ -153,10 +162,43 @@ svg circle{
   .levelcontainer{
   	height: 780px;
   	padding: 0;
-  	margin: 50px 0;
   }
   .metercard::after{
     height: 91%;
     width: 91%;
   }
+  @keyframes html_progress{
+	0% {stroke-dashoffset: 630px;}
+	100% {stroke-dashoffset: calc(630px - (345px * 90) / 100);}
+	}
+
+	@keyframes css_progress{
+		0%{stroke-dashoffset: 630px;}
+		100%{stroke-dashoffset: calc(630px - (345px * 80) / 100);}
+	}
+
+	@keyframes js_progress{
+		0%{stroke-dashoffset: 630px;}
+		100%{stroke-dashoffset: calc(630px - (345px * 75) / 100);}
+	}
+
+	@keyframes cc{
+		0%{stroke-dashoffset: 630px;}
+		100%{stroke-dashoffset: calc(630px - (345px * 85) / 100);}
+	}
+
+	@keyframes lua{
+		0%{stroke-dashoffset: 630px;}
+		100%{stroke-dashoffset: calc(630px - (345px * 85) / 100);}
+	}
+
+	@keyframes blender{
+		0%{stroke-dashoffset: 630px;}
+		100%{stroke-dashoffset: calc(630px - (345px * 60) / 100);}
+	}
+
+	@keyframes arduino{
+		0%{stroke-dashoffset: 630px;}
+		100%{stroke-dashoffset: calc(630px - (345px * 65) / 100);}
+	}
 }
