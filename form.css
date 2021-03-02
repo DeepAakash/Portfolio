@@ -79,16 +79,6 @@ button:hover{
     background: #ff3f81;
 }
 
-@media screen and (max-width: 1050px){
-    body{
-        background-size: 120%
-    }
-    .main-block{
-        width: 70%;
-        margin: 230px 0 0;
-    }
-}
-
 @media screen and (max-width:600px){
     body{
         background-size: 150%
